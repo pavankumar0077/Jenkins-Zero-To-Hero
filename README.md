@@ -132,5 +132,30 @@ http://<ec2-instance-public-ip>:8080/restart
 The docker agent configuration is now successful.
 
 
+# =======================================================================
+# =======================================================================
+
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/db033e56-53b1-43a5-bbde-5a1c1ea2e3ba)
+1) In an Org let us we are working for amazon. People create EC2 instances on Jenkins master and because they are multiple dev's and multiple project teams and multiple dev teams. So Jenkins gets a lot of load to off load these things.
+2) So what jenkins does is you should jenkins master only for scheduling purpose. Becuase of the things can not be read on a single JENKINS MASTER.
+3) If everything runs on a JENKINS Mater then their will a conflicting pkgs like one team needs java 11 and other team needs java 17. So everything running on MASTER is not good for load and for dependencies as well.
+4) Generally people will be cerate one jenkins master and they will create jenkins worker nodes like 1 worker node is for one team like that it will be and it should be. DEVOPS ENGINEERs will catergory the worker nodes like which type of applications or which team should run this worker node like that.
+
+Problem
+--
+1) From the Above picture Master is 1 EC2 instance and 3 worker nodes are 20 EC2 each
+2) Example if there is one team which has no work and mostly sitting idle. SO WASTING THE RESOURCES IN THE AWS INSTANCE
+3) If we say like this, We it is not required we stop it. BUT NEVER KNOW WHEN IT IS REQUIRED.
+4) ARE if you are configuring a auto-scaling group. but we don't know which team need the worker nodes when
+
+
+TO SOLVE THE ABOVE PROBLMES THAT IS USING JENKINS WITH DOCKER AS AGENTS
+--
+
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/00b718fe-8213-466c-928f-2b70b8238bb8)
+
+1) The jenkins pipelines are the jenkins stages we will try to run this jenkins pipelines on DOCKER CONTAINERS
+2) Advantage of Docker container is if we are using DOCKER CONTIAINER that are light weight against VM or Instances.
+3) Very rare cases the dockers concepts may not suites your application like DATABASE.
 
 
