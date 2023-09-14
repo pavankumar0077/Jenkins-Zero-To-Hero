@@ -155,7 +155,8 @@ TO SOLVE THE ABOVE PROBLMES THAT IS USING JENKINS WITH DOCKER AS AGENTS
 ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/00b718fe-8213-466c-928f-2b70b8238bb8)
 
 1) The jenkins pipelines are the jenkins stages we will try to run this jenkins pipelines on DOCKER CONTAINERS
-2) Advantage of Docker container is if we are using DOCKER CONTIAINER that are light weight against VM or Instances.
-3) Very rare cases the dockers concepts may not suites your application like DATABASE.
+3) Advantage of Docker container is if we are using DOCKER CONTIAINER that are light weight against VM or Instances.
+4) Very rare cases the dockers concepts may not suites your application like DATABASE.
 
 
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/11d23a66-8c51-4a03-bc5f-1f5720f9ab12)
