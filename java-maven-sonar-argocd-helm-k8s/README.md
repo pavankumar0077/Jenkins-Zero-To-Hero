@@ -2,6 +2,22 @@
 
 ![Screenshot 2023-03-28 at 9 38 09 PM](https://user-images.githubusercontent.com/43399466/228301952-abc02ca2-9942-4a67-8293-f76647b6f9d8.png)
 
+1) CI - ensures that build is smoths, tests successful , image is create, Code quality is good.
+2) CD - Ensures that deployment or delivery process is done
+3) WHEN WE ARE USING DOCKER AS AGENT THEN WE DON'T NEED TO WORRY ABOUT THE TOOLS CONFIGURATIONS AT ALL
+4) IF WE USE THE DOCKER AS AGENT WE CAN SKIP THE INSTALLATIONS AND CONFIGURATIONS OF THE TOOLS
+
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/b09c9b10-6f6b-4c0b-90cf-db59e6ba3eca)
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/7b6d51b7-9519-46f2-8f9b-4fa3c80d4ab1)
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/d2bf3ec2-9cfb-44b1-ac77-3fd1e82a40b9)
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/57b72edd-6733-4d1a-9a5c-5b744a9789b4)
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/349a7432-f84f-490f-817b-a4aef3f1a40a)
+
+# --
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/8a405fb7-f8a1-4171-ba39-9ba68e56f0de)
+![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/1c9697b9-df8d-4a1a-9f7b-896c6e313b9d)
+
+
 
 Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a Java application using SonarQube, Argo CD, Helm, and Kubernetes:
 
