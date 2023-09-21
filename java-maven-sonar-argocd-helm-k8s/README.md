@@ -57,7 +57,7 @@
 27) ``` http://192.168.39.30:31702/ ```
 28) Now you can able to access the applicaiotn using service port, we can also check using minikube ssh with cluster ip or pod ip but for web ui alwasy recommeded to use service port and minkube ip.
 
-
+# =============================================================================================================================================================================
 
 
 Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a Java application using SonarQube, Argo CD, Helm, and Kubernetes:
