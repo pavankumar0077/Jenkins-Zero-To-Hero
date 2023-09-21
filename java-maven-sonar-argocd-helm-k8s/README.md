@@ -23,7 +23,40 @@
 1) Installation of the tools should be done using kubernetes operators
 2) Operators will manage the life cycle of the kubernetes controllers(updates, etc)
 3) Go to ``` https://operatorhub.io/ ``` and search for ARGO CD and install it
-4) 
+4) check pods unders operators namespace, svc and etc
+5) Go to ```https://argocd-operator.readthedocs.io/en/latest/usage/basics/``` and create deployment
+6) ```
+   apiVersion: argoproj.io/v1alpha1
+         kind: ArgoCD
+         metadata:
+           name: example-argocd
+           labels:
+             example: basic
+         spec: {}
+   ```
+
+8) ``` kubectl edit svc example-argocd-server ``` bydefault argocd-server will be with clusterip change it to NodePort ip under type
+9) ``` minikube service argocd-server ``` To start argocd-server for web UI
+10) ``` minikube service list ``` Now the example-argocd-server type will be changed to NodePort and we will get ip:port address as well if not check with -o wide
+11) ``` kubectl get pods ```
+12) ``` kubectl get secret ``` To find all the secrets
+13) ``` kubectl edit secret example-argocd-cluster ``` Select argo-cluster to find the password of ARGO CD -- username is admin
+14) ``` echo cmlhMkhvUEY5dWRtMzZTWVJwbkdnQjFLUVhXa3FFRFo= | base64 -d ``` Bydefault password will be encrypted so we have to decode it using base64
+15) ``` We get the password for the secret ``` kubectl edit secret example-argocd-cluster ``` and find initial password it will be open in vim editor
+16) after entering the password click on new app
+17) ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/0cd72525-e2c0-4ab4-a1d7-fbb8b64e53e4)
+18) path -- here we have to give path of manifest files as per github
+19) ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/1bb56a44-0f69-4159-a696-97ebf4f30379)
+20) App details
+21) ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/c9adf8fc-d295-486f-a967-c96688d761b5)
+22) Dashboard ARGO CD
+23) ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/6a3f1c0a-9215-4e85-b185-e6f64be8300e)
+24) To access the application ``` kubectl get svc -o wide ``` and select spring-boot-svc WHICH we have created the service using service.yml file --select the name
+25) Get the minikube ip ``` minikube ip ```
+26) find the port number from svc and add minikube ip : svc port
+27) ``` http://192.168.39.30:31702/ ```
+28) Now you can able to access the applicaiotn using service port, we can also check using minikube ssh with cluster ip or pod ip but for web ui alwasy recommeded to use service port and minkube ip.
+
 
 
 
