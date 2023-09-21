@@ -18,6 +18,14 @@
 ![image](https://github.com/pavankumar0077/Jenkins-Zero-To-Hero/assets/40380941/1c9697b9-df8d-4a1a-9f7b-896c6e313b9d)
 
 
+# Installation of any controllers like ARGO-CD in kubernetes
+--
+1) Installation of the tools should be done using kubernetes operators
+2) Operators will manage the life cycle of the kubernetes controllers(updates, etc)
+3) Go to ``` https://operatorhub.io/ ``` and search for ARGO CD and install it
+4) 
+
+
 
 Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a Java application using SonarQube, Argo CD, Helm, and Kubernetes:
 
